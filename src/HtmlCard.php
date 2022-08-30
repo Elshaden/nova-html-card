@@ -22,7 +22,13 @@ class HtmlCard extends Card
 
         $this->content = $this->content();
     }
-
+    
+   public function withCollection($collection){
+        
+        return $this->withMeta(['collection'=>$collection]);
+        
+    }   
+    
     public function content(): string
     {
         return '';
